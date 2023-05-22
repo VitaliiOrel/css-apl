@@ -31,6 +31,9 @@ router.get('/apple', function (req, res) {
   res.render('apple', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'apple',
+    page: {
+      title: "Apple"
+    },
     header: {
       links: [
         { text: 'Mac', url: '#Mac' },
