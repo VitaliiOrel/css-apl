@@ -32,7 +32,7 @@ router.get('/apple', function (req, res) {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'apple',
     page: {
-      title: "Apple"
+      title: 'Apple',
     },
     header: {
       links: [

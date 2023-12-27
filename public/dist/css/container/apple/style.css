@@ -1,0 +1,268 @@
+.section, .header, .product, .ad {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.section_content, .header_content {
+  max-width: 1200px;
+  width: 100%;
+}
+@media all and (width < 1440px) {
+  .section_content, .header_content {
+    max-width: 1200px;
+  }
+}
+@media all and (width < 1260px) {
+  .section_content, .header_content {
+    max-width: 1000px;
+  }
+}
+@media all and (width < 1000px) {
+  .section_content, .header_content {
+    max-width: 800px;
+  }
+}
+@media all and (width < 620px) {
+  .section_content, .header_content {
+    max-width: 600px;
+  }
+}
+
+.section_double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media all and (width < 1260px) {
+  .section_double {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header {
+  background-color: #454545;
+}
+
+.header_content {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.header_block {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.header_icon {
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.header_icon:hover {
+  opacity: 0.7;
+}
+.header_icon:active {
+  opacity: 0.3;
+}
+
+.header_link {
+  color: #dadada;
+  text-decoration: none;
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.header_link:hover {
+  opacity: 0.7;
+}
+.header_link:active {
+  opacity: 0.3;
+}
+
+.header_link {
+  font-size: 12px;
+}
+
+.product_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+.product_title {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.product_description {
+  font-size: 28px;
+}
+
+.product_action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.product_action:hover {
+  opacity: 0.7;
+}
+.product_action:active {
+  opacity: 0.3;
+}
+
+.product_link {
+  color: #0066cc;
+}
+.product_link::after {
+  content: ">";
+  margin-left: 8px;
+}
+
+.product {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.product-big {
+  max-height: 700px;
+  height: 100vh;
+  background-size: cover;
+}
+@media all and (width < 1000px) {
+  .product-big {
+    background-size: 150%;
+    max-height: 500px;
+  }
+}
+
+.product-small {
+  max-height: 580px;
+  height: 100vh;
+  background-size: cover;
+}
+@media all and (width < 1000px) {
+  .product-small {
+    background-size: 150%;
+    max-height: 500px;
+  }
+}
+
+.product-small .product_title {
+  font-size: 40px;
+}
+.product-small .product_description {
+  font-size: 20px;
+}
+
+.product--dark {
+  background-color: black;
+}
+.product--dark .product_title,
+.product--dark .product_description {
+  color: #f5f5f7;
+}
+
+.product--light {
+  background-color: #fafafa;
+}
+.product--light .product_title,
+.product--light .product_description {
+  color: #1d1d1f;
+}
+
+.product--top {
+  align-content: flex-start;
+}
+
+.product--bottom {
+  align-items: flex-end;
+}
+.product--iphone-pro {
+  background-color: #000;
+  background-image: url(/img/iphone_pro.png);
+}
+
+.product--iphone {
+  background-color: #fafafa;
+  background-image: url(/img/iphone.png);
+}
+
+.product--iwatch {
+  background-color: #000;
+  background-image: url(/img/iwatch.png);
+}
+
+.product--trade_in {
+  background-color: #fbfbfd;
+  background-image: url(/img/trade_in.png);
+}
+
+.product--conference {
+  background-color: #000;
+  background-image: url(/img/conference.png);
+}
+
+.product--ipad {
+  background-color: #fbfbfd;
+  background-image: url(/img/ipad.png);
+}
+
+.product--small_business {
+  background-color: #000;
+  background-image: url(/img/small_business.png);
+}
+
+.product--gift {
+  background-color: #fbfbfd;
+  background-image: url(/img/gift.png);
+}
+
+.product--card {
+  background-color: #fbfbfd;
+  background-image: url(/img/card.png);
+}
+
+.test {
+  color: 1D1D1F;
+}
+
+.ad {
+  background-color: white;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-size: 12px;
+}
+.footer p {
+  font-weight: bold;
+}
+.footer a {
+  color: #424245;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav_block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
